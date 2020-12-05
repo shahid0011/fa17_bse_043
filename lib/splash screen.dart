@@ -30,7 +30,6 @@ class _MyHomePageState extends State<MyHomePage> {
             () => Navigator.pushReplacement(
             context, MaterialPageRoute(builder: (context) => SplashScreen())));
   }
-
   @override
   Widget build(BuildContext context) {
     return Container(
