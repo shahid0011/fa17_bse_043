@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
 
     return Container(
-      color: Colors.grey.shade900,
+      color: Colors.grey.shade900,1
       child: Image.asset('images/1.jpg'),
     );
   }
