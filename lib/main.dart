@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
+import 'package:fa17_bse_043/Hard Dice.dart';
+import 'package:fa17_bse_043/Simple Dice.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -18,8 +20,8 @@ class _MyAppState extends State<MyApp> {
     return new SplashScreen(
         seconds: 10,
         navigateAfterSeconds: new AfterSplash(),
-        title: new Text('shahid.  ' 'FA17-BSE-043'),
-        image: new Image.asset('1.jpg'),
+        title: new Text('shahid farid  ' 'FA17-BSE-043'),
+        image: new Image.asset('images/1.jpg'),
         backgroundColor: Colors.white,
         styleTextUnderTheLoader: new TextStyle(),
         photoSize: 100.0,
@@ -73,15 +75,13 @@ class _HomePageState extends State<HomePage> {
                       textColor: Colors.white,
                       color: Colors.green,
                       child: Text(
-                        'Simple',
+                        'Hard',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20.0,
                         ),
                       ),
-                      onPressed: () {
-                        debugPrint('simple');
-                      },
+                      onPressed: hardDice
                     ),
                   ),
                 ),
@@ -92,15 +92,13 @@ class _HomePageState extends State<HomePage> {
                       textColor: Colors.white,
                       color: Colors.green,
                       child: Text(
-                        'Hard',
+                        'Simple',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20.0,
                         ),
                       ),
-                      onPressed: () {
-                        debugPrint('hard');
-                      },
+                      onPressed: simpleDice
                     ),
                   ),
                 ),
@@ -141,4 +139,16 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+   void simpleDice() {
+    setState(() {
+      Navigator.push(context, new MaterialPageRoute(builder: (context) => new SimpleDice()));
+    });
+  }
+
+  void hardDice() {
+    setState(() {
+      Navigator.push(context, new MaterialPageRoute(builder: (context) => new HardDice()));
+    });
+  }
+
 }
