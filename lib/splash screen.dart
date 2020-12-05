@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'main.dart';
 
 class SplashScreen extends StatelessWidget {
   @override
@@ -25,7 +24,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
-    super.initState();1
+    super.initState();
     Timer(
         Duration(seconds: 10),
             () => Navigator.pushReplacement(
