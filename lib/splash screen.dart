@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+//import 'package:fa17_bse_043/main.dart';
 import 'dart:async';
 
 class SplashScreen extends StatelessWidget {
@@ -34,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
 
     return Container(
-      color: Colors.grey.shade900,1
+      color: Colors.grey.shade900,
       child: Image.asset('images/1.jpg'),
     );
   }
