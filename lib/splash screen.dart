@@ -25,7 +25,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
-    super.initState();
+    super.initState();1
     Timer(
         Duration(seconds: 10),
             () => Navigator.pushReplacement(
